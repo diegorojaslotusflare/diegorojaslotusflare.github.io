@@ -1,0 +1,1469 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Authorization</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Authorization">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Authorization" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LFSwagger" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LFSwagger</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Authorization"
+		  data-hnd-context="9"
+		  data-hnd-title="Authorization"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="APIs.html">APIs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="APIs.html" title="APIs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Acquisition.html" title="Acquisition" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="BillingModule.html" title="Billing Module" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6"> html
+<html>
+  <head>
+    <title>Authorization</title>
+    <style type="text/css">
+      body {
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>Authorization</h1>
+    <div class="app-desc">Permission Management APIs</div>
+    <div class="app-desc">More information: <a href="http://www.lotusflare.com">http://www.lotusflare.com</a></div>
+    <div class="app-desc">Contact Info: <a href="tech@lotusflare.com">tech@lotusflare.com</a></div>
+    <div class="app-desc">Version: 3.0</div>
+    <div class="app-desc">BasePath:/{basePath}/</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Permissions">Permissions</a></h4>
+  <ul>
+  <li><a href="#deletePermissionsPost"><code><span class="http-method">post</span> /delete_permissions</code></a></li>
+  <li><a href="#setPermissionsPost"><code><span class="http-method">post</span> /set_permissions</code></a></li>
+  </ul>
+  <h4><a href="#Roles">Roles</a></h4>
+  <ul>
+  <li><a href="#getAccessListPost"><code><span class="http-method">post</span> /get_access_list</code></a></li>
+  <li><a href="#getRoleHistoryPost"><code><span class="http-method">post</span> /get_role_history</code></a></li>
+  <li><a href="#getRolesPost"><code><span class="http-method">post</span> /get_roles</code></a></li>
+  <li><a href="#upsertRolePost"><code><span class="http-method">post</span> /upsert_role</code></a></li>
+  </ul>
+  <h4><a href="#SessionManagement">SessionManagement</a></h4>
+  <ul>
+  <li><a href="#endSessionPost"><code><span class="http-method">post</span> /end_session</code></a></li>
+  <li><a href="#getSessionsPost"><code><span class="http-method">post</span> /get_sessions</code></a></li>
+  <li><a href="#refreshTokenPost"><code><span class="http-method">post</span> /refresh_token</code></a></li>
+  </ul>
+  <h4><a href="#TokenVerification">TokenVerification</a></h4>
+  <ul>
+  <li><a href="#verifyTokenPost"><code><span class="http-method">post</span> /verify_token</code></a></li>
+  </ul>
+
+  <h1><a name="Permissions">Permissions</a></h1>
+  <div class="method"><a name="deletePermissionsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /delete_permissions</code></pre></div>
+    <div class="method-summary">Remove permission for user do specific actions to target id (<span class="nickname">deletePermissionsPost</span>)</div>
+    <div class="method-notes">Remove a role for tuple caller_id - target_id - target_type. Revoke previously allowed access to specific operations.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#delete_permissions_body">delete_permissions_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Remove permission&quot;,
+  &quot;value&quot; : {
+    &quot;permissions&quot; : [ {
+      &quot;caller_id&quot; : &quot;9d27fbdb87f345199feb0a4bcfbfa644&quot;,
+      &quot;target_id&quot; : &quot;3f94bff9225d419b8891439bd346bd38&quot;,
+      &quot;target_type&quot; : 1
+    } ]
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_2">inline_response_200_2</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 0,
+  "code" : 6,
+  "module" : "module"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200_2">inline_response_200_2</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: success</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;0f9386da0d6a13d2348f56930391ba02&quot;,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;server_time&quot;:1616784338,&quot;code&quot;:0}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="setPermissionsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /set_permissions</code></pre></div>
+    <div class="method-summary">Set permission for user id to target id (<span class="nickname">setPermissionsPost</span>)</div>
+    <div class="method-notes">Add a role for tuples caller_id - target_id - target_type. After this request, caller id can take actions upon target_id that are defined through operations for assigned role.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#set_permissions_body">set_permissions_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Add observer role to user for given subscriber&quot;,
+  &quot;value&quot; : {
+    &quot;permissions&quot; : [ {
+      &quot;role&quot; : &quot;observer&quot;,
+      &quot;caller_id&quot; : &quot;9d27fbdb87f345199feb0a4bcfbfa644&quot;,
+      &quot;target_id&quot; : &quot;3f94bff9225d419b8891439bd346bd38&quot;,
+      &quot;target_type&quot; : 1
+    } ]
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_2">inline_response_200_2</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 0,
+  "code" : 6,
+  "module" : "module"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200_2">inline_response_200_2</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: success</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;0f9386da0d6a13d2348f56930391ba02&quot;,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;server_time&quot;:1616784338,&quot;code&quot;:0}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="Roles">Roles</a></h1>
+  <div class="method"><a name="getAccessListPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_access_list</code></pre></div>
+    <div class="method-summary">Get the list of caller_ids who has any role on given target_id (<span class="nickname">getAccessListPost</span>)</div>
+    <div class="method-notes">Fetches the list of callers who has a role defined on given target_id and target_type.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_access_list_body">get_access_list_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Get access list&quot;,
+  &quot;value&quot; : {
+    &quot;target_id&quot; : &quot;3f94bff9225d419b8891439bd346bd38&quot;,
+    &quot;target_type&quot; : 1
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_3">inline_response_200_3</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 0,
+  "code" : 6,
+  "module" : "module",
+  "access_list" : [ {
+    "role" : "role",
+    "caller_id" : "caller_id"
+  }, {
+    "role" : "role",
+    "caller_id" : "caller_id"
+  } ]
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200_3">inline_response_200_3</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_access_list</div>
+    <pre class="example"><code>{&quot;access_list&quot;:[{&quot;role&quot;:&quot;superadmin&quot;,&quot;caller_id&quot;:&quot;a2e9554d939f4edaa4c0b4c99502b552&quot;},{&quot;role&quot;:&quot;observer&quot;,&quot;caller_id&quot;:&quot;0f9386da0d6a13d2348f56930391ba02&quot;}],&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_access_list_empty</div>
+    <pre class="example"><code>{&quot;access_list&quot;:[],&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getRoleHistoryPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_role_history</code></pre></div>
+    <div class="method-summary">Get history of given role (<span class="nickname">getRoleHistoryPost</span>)</div>
+    <div class="method-notes">Fetches the history of the passed role</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_role_history_body">get_role_history_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Get history of role&quot;,
+  &quot;value&quot; : {
+    &quot;role&quot; : &quot;observer&quot;
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_1">inline_response_200_1</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 0,
+  "code" : 6,
+  "roles" : [ {
+    "role" : "role",
+    "operations" : [ "operations", "operations" ],
+    "description" : "description"
+  }, {
+    "role" : "role",
+    "operations" : [ "operations", "operations" ],
+    "description" : "description"
+  } ],
+  "module" : "module"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200_1">inline_response_200_1</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_role_history</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;cf0910c8e998c169e026193415dcff88&quot;,&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;role_history&quot;:[{&quot;operations&quot;:[&quot;/api/v3/order/get_orders&quot;,&quot;/api/v3/user/get_.*&quot;],&quot;change_time&quot;:1616779922,&quot;description&quot;:&quot;obeserver can do read of user's orders, get information on account and its subscribers&quot;,&quot;role&quot;:&quot;observer&quot;,&quot;modifier_id&quot;:&quot;9d27fbdb87f345199feb0a4bcfbfa644&quot;,&quot;modifier_id_type&quot;:4},{&quot;operations&quot;:[&quot;/api/v3/order/get_orders&quot;,&quot;/api/v3/user/get_account&quot;,&quot;/api/v3/user/get_full_info&quot;,&quot;/api/v3/user/get_subscriber&quot;,&quot;/api/v3/user/get_user&quot;],&quot;change_time&quot;:1616779920,&quot;description&quot;:&quot;obeserver can do read of user's orders, get information on account and its subscribers&quot;,&quot;role&quot;:&quot;observer&quot;,&quot;modifier_id&quot;:&quot;9d27fbdb87f345199feb0a4bcfbfa644&quot;,&quot;modifier_id_type&quot;:4}],&quot;server_time&quot;:1616783670}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getRolesPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_roles</code></pre></div>
+    <div class="method-summary">Get information on roles (<span class="nickname">getRolesPost</span>)</div>
+    <div class="method-notes">Get information of all or specific roles, depending on the existence of the body parameter &quot;role&quot;</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_roles_body">get_roles_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Get specific role&quot;,
+  &quot;value&quot; : {
+    &quot;role&quot; : &quot;observer&quot;
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_1">inline_response_200_1</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 0,
+  "code" : 6,
+  "roles" : [ {
+    "role" : "role",
+    "operations" : [ "operations", "operations" ],
+    "description" : "description"
+  }, {
+    "role" : "role",
+    "operations" : [ "operations", "operations" ],
+    "description" : "description"
+  } ],
+  "module" : "module"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200_1">inline_response_200_1</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_all_roles</div>
+    <pre class="example"><code>{&quot;roles&quot;:[{&quot;role&quot;:&quot;observer&quot;,&quot;operations&quot;:[&quot;/api/v3/user/get_.*&quot;,&quot;/api/v3/order/get_.*&quot;],&quot;description&quot;:&quot;obeserver can do read and write&quot;},{&quot;role&quot;:&quot;superadmin&quot;,&quot;operations&quot;:[&quot;*&quot;],&quot;description&quot;:&quot;all permission&quot;}],&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;request_id&quot;:&quot;3f94bff9225d419b8891439bd346bd38&quot;,&quot;server_time&quot;:1616783323}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: one_role_only</div>
+    <pre class="example"><code>{&quot;roles&quot;:[{&quot;role&quot;:&quot;observer&quot;,&quot;operations&quot;:[&quot;/api/v3/user/get_.*&quot;,&quot;/api/v3/order/get_.*&quot;],&quot;description&quot;:&quot;obeserver can do read and write&quot;}],&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;request_id&quot;:&quot;3f94bff9225d419b8891439bd346bd38&quot;,&quot;server_time&quot;:1616783323}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="upsertRolePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /upsert_role</code></pre></div>
+    <div class="method-summary">Insert/update role (<span class="nickname">upsertRolePost</span>)</div>
+    <div class="method-notes">Insert new role or update the already existing role. Note that the update will <strong>overwrite</strong> the existing operations for given role.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#upsert_role_body">upsert_role_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Add new role&quot;,
+  &quot;value&quot; : {
+    &quot;role&quot; : &quot;observer&quot;,
+    &quot;operations&quot; : [ &quot;/api/v3/order/get_.*&quot;, &quot;/api/v3/user/get_.*&quot; ],
+    &quot;description&quot; : &quot;obeserver can read user's orders, get um information on account and its subscribers&quot;
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1548283725,
+  "code" : 0,
+  "module" : "AUTHORIZATION"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfull response
+        <a href="#inline_response_200">inline_response_200</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="SessionManagement">SessionManagement</a></h1>
+  <div class="method"><a name="endSessionPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /end_session</code></pre></div>
+    <div class="method-summary">Invalidate session for particular user (<span class="nickname">endSessionPost</span>)</div>
+    <div class="method-notes">Invalidate session for particular user and session_id, or all sessions for particular user if session_id is not specified.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#end_session_body">end_session_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;value&quot; : {
+    &quot;target_id&quot; : &quot;20v29uvn2393d022i3nf023in2&quot;,
+    &quot;target_type&quot; : 3,
+    &quot;session_id&quot; : &quot;322898012&quot;
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: request_successful</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;c0f6c50de88c20924d850249355c1b18&quot;,&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: no_access_for_action</div>
+    <pre class="example"><code>{&quot;code&quot;:114,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getSessionsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_sessions</code></pre></div>
+    <div class="method-summary">Get all the logged in sessions for particular user (<span class="nickname">getSessionsPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_sessions_body">get_sessions_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;value&quot; : {
+    &quot;target_id&quot; : &quot;20v29uvn2393d022i3nf023in2&quot;,
+    &quot;target_type&quot; : 3
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: request_successful</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;c0f6c50de88c20924d850249355c1b18&quot;,&quot;sessions&quot;:[{&quot;device_id&quot;:&quot;device_1&quot;,&quot;state&quot;:2,&quot;expiration_counter&quot;:1,&quot;user_id&quot;:&quot;e52e5dc43a134983a647643d40386f54&quot;,&quot;operator_name&quot;:&quot;lotus_flare&quot;}],&quot;code&quot;:0,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: no_access_for_action</div>
+    <pre class="example"><code>{&quot;code&quot;:114,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="refreshTokenPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /refresh_token</code></pre></div>
+    <div class="method-summary">Refresh user tokens (<span class="nickname">refreshTokenPost</span>)</div>
+    <div class="method-notes">Refreshes user api and proxy tokens</div>
+
+
+
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_4">inline_response_200_4</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0,
+  "expire_sec" : 259200,
+  "api_token" : "api_token",
+  "module" : "AUTHORIZATION",
+  "proxy_token" : "proxy_token"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Refresh token succeeded. A new token should be returned in response.
+        <a href="#inline_response_200_4">inline_response_200_4</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="TokenVerification">TokenVerification</a></h1>
+  <div class="method"><a name="verifyTokenPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /verify_token</code></pre></div>
+    <div class="method-summary">Verify tenant tokens (<span class="nickname">verifyTokenPost</span>)</div>
+    <div class="method-notes">Verify tenant token</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#verify_token_body">verify_token_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_5">inline_response_200_5</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "reason" : "reason",
+  "code" : 0,
+  "module" : "AUTHORIZATION",
+  "verified" : true
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Token validation succeeded.
+        <a href="#inline_response_200_5">inline_response_200_5</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: key_id_missing</div>
+    <pre class="example"><code>{&quot;verified&quot;:false,&quot;reason&quot;:&quot;key_id missing&quot;,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;code&quot;:0}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: token_verified</div>
+    <pre class="example"><code>{&quot;verified&quot;:true,&quot;reason&quot;:&quot;everything is awesome~&quot;,&quot;module&quot;:&quot;AUTHORIZATION&quot;,&quot;code&quot;:0}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#500_response"><code>500_response</code></a></li>
+    <li><a href="#delete_permissions_body"><code>delete_permissions_body</code></a></li>
+    <li><a href="#delete_permissions_permissions"><code>delete_permissions_permissions</code></a></li>
+    <li><a href="#end_session_body"><code>end_session_body</code></a></li>
+    <li><a href="#failed_request_body"><code>failed_request_body</code></a></li>
+    <li><a href="#get_access_list_body"><code>get_access_list_body</code></a></li>
+    <li><a href="#get_role_history_body"><code>get_role_history_body</code></a></li>
+    <li><a href="#get_roles_body"><code>get_roles_body</code></a></li>
+    <li><a href="#get_sessions_body"><code>get_sessions_body</code></a></li>
+    <li><a href="#inline_response_200"><code>inline_response_200</code></a></li>
+    <li><a href="#inline_response_200_1"><code>inline_response_200_1</code></a></li>
+    <li><a href="#inline_response_200_1_roles"><code>inline_response_200_1_roles</code></a></li>
+    <li><a href="#inline_response_200_2"><code>inline_response_200_2</code></a></li>
+    <li><a href="#inline_response_200_3"><code>inline_response_200_3</code></a></li>
+    <li><a href="#inline_response_200_3_access_list"><code>inline_response_200_3_access_list</code></a></li>
+    <li><a href="#inline_response_200_4"><code>inline_response_200_4</code></a></li>
+    <li><a href="#inline_response_200_5"><code>inline_response_200_5</code></a></li>
+    <li><a href="#set_permissions_body"><code>set_permissions_body</code></a></li>
+    <li><a href="#set_permissions_permissions"><code>set_permissions_permissions</code></a></li>
+    <li><a href="#upsert_role_body"><code>upsert_role_body</code></a></li>
+    <li><a href="#verify_token_body"><code>verify_token_body</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="500_response"><code>500_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Internal server error</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="delete_permissions_body"><code>delete_permissions_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">permissions </div><div class="param-desc"><span class="param-type"><a href="#delete_permissions_permissions">array[delete_permissions_permissions]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="delete_permissions_permissions"><code>delete_permissions_permissions</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">caller_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The identifier that will be assigned with the given role, usually user_id of the UM </div>
+<div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> UM's identifier for subscriber/account/user </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> UM's value of determing whether target_id represents user_id, account_id or subscriber_id </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="end_session_body"><code>end_session_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Mandatory ID of user for which we are ending session. </div>
+          <div class="param-desc"><span class="param-type">example: 03f29g23n32u9nd239nd2932cnu3</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">session_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 322898012</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="failed_request_body"><code>failed_request_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">message description for a failed request</div>
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module </div>
+          <div class="param-desc"><span class="param-type">example: COMMON</span></div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1559782251</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> relevant error code </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_access_list_body"><code>get_access_list_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> UM's identifier for subscriber/account/user </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> UM's value of determing whether target_id represents user_id, account_id or subscriber_id </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_role_history_body"><code>get_role_history_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">role </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Role name </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_roles_body"><code>get_roles_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">role (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Role name - provided if we want only information of the specific role </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_sessions_body"><code>get_sessions_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Mandatory ID of user for which we are getting the logged in sessions. If not passed will default to user_id from claims. </div>
+          <div class="param-desc"><span class="param-type">example: 03f29g23n32u9nd239nd2932cnu3</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type - only user type allowed. If target_id isnt passed this shouldnt be either. </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200"><code>inline_response_200</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Server time </div>
+          <div class="param-desc"><span class="param-type">example: 1548283725</span></div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+          <div class="param-desc"><span class="param-type">example: AUTHORIZATION</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+          <div class="param-desc"><span class="param-type">example: 0</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_1"><code>inline_response_200_1</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">roles (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_1_roles">array[inline_response_200_1_roles]</a></span>  </div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Server time </div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_1_roles"><code>inline_response_200_1_roles</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">role (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operations (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_2"><code>inline_response_200_2</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Server time </div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_3"><code>inline_response_200_3</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">access_list (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_3_access_list">array[inline_response_200_3_access_list]</a></span> Array of callers who have a role defined on given target_id and target_type </div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Server time </div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_3_access_list"><code>inline_response_200_3_access_list</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">caller_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">role (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_4"><code>inline_response_200_4</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">expire_sec (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Expiration seconds for the token </div>
+          <div class="param-desc"><span class="param-type">example: 259200</span></div>
+<div class="param">api_token (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Server token </div>
+          <div class="param-desc"><span class="param-type">example: api_token</span></div>
+<div class="param">proxy_token (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Token for proxy </div>
+          <div class="param-desc"><span class="param-type">example: proxy_token</span></div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#"></a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: AUTHORIZATION</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#"></a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 0</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_5"><code>inline_response_200_5</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">verified (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Is token verified </div>
+<div class="param">reason (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Reason if token isn't verified </div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: AUTHORIZATION</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 0</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="set_permissions_body"><code>set_permissions_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">permissions </div><div class="param-desc"><span class="param-type"><a href="#set_permissions_permissions">array[set_permissions_permissions]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="set_permissions_permissions"><code>set_permissions_permissions</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">role </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Role name - provided if we want only information of the specific role </div>
+<div class="param">caller_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The identifier that will be assigned with the given role, usually user_id of the UM </div>
+<div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> UM's identifier for subscriber/account/user </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> UM's value of determing whether target_id represents user_id, account_id or subscriber_id </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="upsert_role_body"><code>upsert_role_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">role </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Role name </div>
+<div class="param">operations </div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span> Array of string where each string represent a regex pattern for which the role will try to match the endpoint we want to validate the permission on </div>
+<div class="param">description </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Description of the role. Can include whatever information the user find fit for the role description. </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="verify_token_body"><code>verify_token_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">token </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Token we want to validate </div>
+          <div class="param-desc"><span class="param-type">example: token</span></div>
+<div class="param">uri </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Path from token </div>
+          <div class="param-desc"><span class="param-type">example: /api/v3/authorization/route_name</span></div>
+<div class="param">context_options </div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  </body>
+</html>
+</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts13">Created with the Personal Edition of HelpNDoc: </span><a class="rvts14" href="https://www.helpndoc.com/help-authoring-tool">Free help authoring environment</a></p>
+
+            </div>
+            
+            
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

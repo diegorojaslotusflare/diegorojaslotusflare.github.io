@@ -1,0 +1,2071 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>User Management </title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="User Management ">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="User Management " />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LFSwagger" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LFSwagger</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="UserManagement"
+		  data-hnd-context="23"
+		  data-hnd-title="User Management "
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="APIs.html">APIs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="APIs.html" title="APIs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Top-up.html" title="Top-up" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Vouchers.html" title="Vouchers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6"> html
+<html>
+  <head>
+    <title>User Management (DNO)</title>
+    <style type="text/css">
+      body {
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>User Management (DNO)</h1>
+    <div class="app-desc">Internal User Management</div>
+    <div class="app-desc">More information: <a href="http://www.lotusflare.com">http://www.lotusflare.com</a></div>
+    <div class="app-desc">Contact Info: <a href="tech@lotusflare.com">tech@lotusflare.com</a></div>
+    <div class="app-desc">Version: 3.0</div>
+    <div class="app-desc">BasePath:/{basePath}/</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#AddressManagement">AddressManagement</a></h4>
+  <ul>
+  <li><a href="#getAddressesPost"><code><span class="http-method">post</span> /get_addresses</code></a></li>
+  </ul>
+  <h4><a href="#Default">Default</a></h4>
+  <ul>
+  <li><a href="#getReferralHistoryPost"><code><span class="http-method">post</span> /get_referral_history</code></a></li>
+  </ul>
+  <h4><a href="#GeneralUserManager">GeneralUserManager</a></h4>
+  <ul>
+  <li><a href="#addImsi"><code><span class="http-method">post</span> /add_imsis</code></a></li>
+  <li><a href="#addReferralPost"><code><span class="http-method">post</span> /add_referral</code></a></li>
+  <li><a href="#assignReferralCodePost"><code><span class="http-method">post</span> /assign_referral_code</code></a></li>
+  <li><a href="#getCredentialsPost"><code><span class="http-method">post</span> /get_credentials</code></a></li>
+  <li><a href="#getIdsFromReverseIndexPost"><code><span class="http-method">post</span> /get_ids_from_reverse_index</code></a></li>
+  <li><a href="#getUmEntitiesPost"><code><span class="http-method">post</span> /get_um_entities</code></a></li>
+  <li><a href="#updateFlagsPost"><code><span class="http-method">post</span> /update_flags</code></a></li>
+  <li><a href="#updatePropertiesPost"><code><span class="http-method">post</span> /update_properties</code></a></li>
+  <li><a href="#updateStatePost"><code><span class="http-method">post</span> /update_state</code></a></li>
+  <li><a href="#updateTrialPropertyForUserPost"><code><span class="http-method">post</span> /update_trial_property_for_user</code></a></li>
+  <li><a href="#updateUmEntitiesPost"><code><span class="http-method">post</span> /update_um_entities</code></a></li>
+  </ul>
+  <h4><a href="#UserAccountSubscriberGeneralInformation">UserAccountSubscriberGeneralInformation</a></h4>
+  <ul>
+  <li><a href="#getAccountPost"><code><span class="http-method">post</span> /get_account</code></a></li>
+  <li><a href="#getSubscriberPost"><code><span class="http-method">post</span> /get_subscriber</code></a></li>
+  <li><a href="#getUserPost"><code><span class="http-method">post</span> /get_user</code></a></li>
+  </ul>
+
+  <h1><a name="AddressManagement">AddressManagement</a></h1>
+  <div class="method"><a name="getAddressesPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_addresses</code></pre></div>
+    <div class="method-summary">Get addresses for account/subscriber (<span class="nickname">getAddressesPost</span>)</div>
+    <div class="method-notes">Get addresses at the account or subscriber level. Addresses can be filtered by the address id or the address type</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_addresses_body">get_addresses_body</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_4">inline_response_200_4</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0.8008281904610115,
+  "module" : "module",
+  "address_id" : { },
+  "request_id" : "request_id"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#inline_response_200_4">inline_response_200_4</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{&quot;request_id&quot;:&quot;99bc2f26a5ca591ac4140560b1c13b17&quot;,&quot;code&quot;:0,&quot;module&quot;:&quot;USER&quot;,&quot;address_id&quot;:{&quot;address&quot;:&quot;12345&quot;,&quot;city&quot;:&quot;city_name&quot;,&quot;hierarchy&quot;:2,&quot;type&quot;:3,&quot;department&quot;:&quot;department&quot;}}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: address_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:91,&quot;module&quot;:&quot;USER&quot;}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: address_not_removable</div>
+    <pre class="example"><code>{&quot;code&quot;:104,&quot;module&quot;:&quot;USER&quot;}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: invalid_address_hierarchy</div>
+    <pre class="example"><code>{&quot;code&quot;:68,&quot;module&quot;:&quot;USER&quot;}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: access_not_allowed</div>
+    <pre class="example"><code>{&quot;code&quot;:114,&quot;module&quot;:&quot;USER&quot;}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="Default">Default</a></h1>
+  <div class="method"><a name="getReferralHistoryPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_referral_history</code></pre></div>
+    <div class="method-summary">Returns a list of subscriber's referres (<span class="nickname">getReferralHistoryPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_referral_history_body">get_referral_history_body</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_5">inline_response_200_5</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "history" : {
+    "referral_history" : [ {
+      "refer_year" : 2021,
+      "refer_month" : "5",
+      "referred_subscriber_id" : "97550f20f4154ff094d0437543cc5374",
+      "subscriber_id" : "5093df1a587d430fac80ed87f169d95b",
+      "refer_time" : 1621021271,
+      "operator" : "lotusflaretelecom"
+    }, {
+      "refer_year" : 2021,
+      "refer_month" : "5",
+      "referred_subscriber_id" : "97550f20f4154ff094d0437543cc5374",
+      "subscriber_id" : "5093df1a587d430fac80ed87f169d95b",
+      "refer_time" : 1621021271,
+      "operator" : "lotusflaretelecom"
+    } ]
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#inline_response_200_5">inline_response_200_5</a>
+    <h4 class="field-label">304</h4>
+    Indicates client has latest data
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="GeneralUserManager">GeneralUserManager</a></h1>
+  <div class="method"><a name="addImsi"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /add_imsis</code></pre></div>
+    <div class="method-summary">Add IMSI for a particular subscriber (<span class="nickname">addImsi</span>)</div>
+    <div class="method-notes">Adds IMSIs to a particular subscriber.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#add_imsis_body">add_imsis_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="addReferralPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /add_referral</code></pre></div>
+    <div class="method-summary">Add referral for particular subscriber (<span class="nickname">addReferralPost</span>)</div>
+    <div class="method-notes">Add referral for subscriber with target_id, who is referred by subscriber with referral_id</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#add_referral_body">add_referral_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0,
+  "module" : "USER"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#inline_response_200">inline_response_200</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="assignReferralCodePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /assign_referral_code</code></pre></div>
+    <div class="method-summary">Assign refferal_code to a particular subscriber (<span class="nickname">assignReferralCodePost</span>)</div>
+    <div class="method-notes">Assign referral given by referral_code to a particular subscriber.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#assign_referral_code_body">assign_referral_code_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0,
+  "module" : "USER"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#inline_response_200">inline_response_200</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getCredentialsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_credentials</code></pre></div>
+    <div class="method-summary">Get user credentials (<span class="nickname">getCredentialsPost</span>)</div>
+    <div class="method-notes">Based on the passed user_creds type and value, get credentials</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_credentials_body">get_credentials_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_2">inline_response_200_2</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "identifier" : "example_email@gmail.com",
+  "operator_name" : "operator_name",
+  "code" : 0,
+  "user_id" : "user_id",
+  "module" : "USER",
+  "identifier_type" : 1,
+  "verified" : true,
+  "secret" : "secret"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#inline_response_200_2">inline_response_200_2</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getIdsFromReverseIndexPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_ids_from_reverse_index</code></pre></div>
+    <div class="method-summary">Get user/account/subscriber id from reverse_index (<span class="nickname">getIdsFromReverseIndexPost</span>)</div>
+    <div class="method-notes">Based on the passed id_type, id_value and target_type, choose method to call and fetch id of the entity we need from reverse_index</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_ids_from_reverse_index_body">get_ids_from_reverse_index_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;summary&quot; : &quot;Get account ids from msisdns&quot;,
+  &quot;value&quot; : {
+    &quot;array_of_id_obj&quot; : [ {
+      &quot;id_type&quot; : &quot;msisdn&quot;,
+      &quot;id_value&quot; : 607339159722
+    }, {
+      &quot;id_type&quot; : &quot;msisdn&quot;,
+      &quot;id_value&quot; : 129863529722
+    } ],
+    &quot;target_type&quot; : 2
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_subscriber_id_from_imsi</div>
+    <pre class="example"><code>{&quot;module&quot;:&quot;USER&quot;,&quot;code&quot;:0,&quot;123456789012345&quot;:&quot;91ed587fe46449b394725ec005347a70&quot;}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_account_id_from_external_id</div>
+    <pre class="example"><code>{&quot;module&quot;:&quot;USER&quot;,&quot;code&quot;:0,&quot;607339159722&quot;:&quot;36c858dd7d1948c9b719769482faebd8&quot;,&quot;129863529722&quot;:&quot;27c858ad7d1948c9b94576482afaedc9&quot;}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getUmEntitiesPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_um_entities</code></pre></div>
+    <div class="method-summary">get user/account/subscriber entities (<span class="nickname">getUmEntitiesPost</span>)</div>
+    <div class="method-notes">Based on the passed get objects, return um entities.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_um_entities_body">get_um_entities_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_1">inline_response_200_1</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "target_id" : {
+    "d9c121a0c7ea4f218d51cb22bab03ca0" : [ null, [ {
+      "user_owner" : "e142c3afdb274c5694f9411290adf3fc"
+    } ] ],
+    "email_50743930525@email.com" : [ null, [ {
+      "user_owner" : "e142c3afdb274c5694f9411290adf3fc"
+    } ] ]
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#inline_response_200_1">inline_response_200_1</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updateFlagsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_flags</code></pre></div>
+    <div class="method-summary">Update flags field for particular subscriber or account (<span class="nickname">updateFlagsPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_flags_body">update_flags_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;value&quot; : {
+    &quot;target_id&quot; : &quot;20v29uvn2393d022i3nf023in2&quot;,
+    &quot;target_type&quot; : 2,
+    &quot;flags&quot; : {
+      &quot;some_flag&quot; : true
+    }
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: request_successful</div>
+    <pre class="example"><code>{&quot;code&quot;:0,&quot;module&quot;:&quot;USER&quot;,&quot;request_id&quot;:&quot;ad61af274a969205e92bd721e0bb3a7c&quot;,&quot;server_time&quot;:1585606862}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: not_permitted_target_type</div>
+    <pre class="example"><code>{&quot;code&quot;:30,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: invalid_flag</div>
+    <pre class="example"><code>{&quot;code&quot;:113,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: update_flags_forbidden</div>
+    <pre class="example"><code>{&quot;code&quot;:118,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: no_access_for_action</div>
+    <pre class="example"><code>{&quot;code&quot;:114,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updatePropertiesPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_properties</code></pre></div>
+    <div class="method-summary">Update account or subscriber properties (<span class="nickname">updatePropertiesPost</span>)</div>
+    <div class="method-notes">Updates the properties of a particular account or subscriber. Only the fields to be updated should be sent. Note that IMSI updates will not be allowed via this endpoint.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_properties_body">update_properties_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;value&quot; : {
+    &quot;target_id&quot; : &quot;aksfjskgjweretdgq3ged&quot;,
+    &quot;target_type&quot; : 1,
+    &quot;user_id&quot; : &quot;3c078590b6714761ba897027508cb191&quot;,
+    &quot;ban_msisdn&quot; : false,
+    &quot;brand&quot; : &quot;brand_name&quot;,
+    &quot;sim_activation_date&quot; : &quot;datetime&quot;,
+    &quot;device_id&quot; : &quot;akasakgjwegesdl321&quot;,
+    &quot;device_type&quot; : &quot;device_type&quot;
+  }
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: property_override_not_allowed</div>
+    <pre class="example"><code>{&quot;code&quot;:92,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updateStatePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_state</code></pre></div>
+    <div class="method-summary">Updates account or subscriber state (<span class="nickname">updateStatePost</span>)</div>
+    <div class="method-notes">Updates an account/subscriber state.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_state_body">update_state_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: account_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:93,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: subscriber_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:99,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updateTrialPropertyForUserPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_trial_property_for_user</code></pre></div>
+    <div class="method-summary">Update account/subscriber used_trial property (<span class="nickname">updateTrialPropertyForUserPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_trial_property_for_user_body">update_trial_property_for_user_body</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0,
+  "module" : "USER"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#inline_response_200">inline_response_200</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updateUmEntitiesPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_um_entities</code></pre></div>
+    <div class="method-summary">Update user/account/subscriber entities (<span class="nickname">updateUmEntitiesPost</span>)</div>
+    <div class="method-notes">Based on the passed columns to update, um update functions are called.
+Currently, update of payment_gateway_id and billing_day_of_month are supported.</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_um_entities_body">update_um_entities_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "code" : 0,
+  "module" : "USER"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Fetched operator-specific information successfully
+        <a href="#inline_response_200">inline_response_200</a>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="UserAccountSubscriberGeneralInformation">UserAccountSubscriberGeneralInformation</a></h1>
+  <div class="method"><a name="getAccountPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_account</code></pre></div>
+    <div class="method-summary">Gets information associated to an account (<span class="nickname">getAccountPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_account_body">get_account_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;target_id&quot; : &quot;20v29uvn2393d022i3nf023in2&quot;,
+  &quot;target_type&quot; : 2
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: get_account</div>
+    <pre class="example"><code>{&quot;module&quot;:&quot;USER&quot;,&quot;code&quot;:0,&quot;operator&quot;:&quot;operator_name&quot;,&quot;state&quot;:1,&quot;blocked&quot;:false,&quot;primary_subscribers&quot;:[&quot;46c0bfa9465f479a9c148e27b0dadfeb&quot;],&quot;user_owner&quot;:&quot;e6543e57d57d4f06a2d6d45fd4a4ddd1&quot;,&quot;cardinality&quot;:7376,&quot;billing_day_of_month&quot;:25,&quot;account_id&quot;:&quot;46fa8007ddae4c74b3ad499652db7fe7&quot;,&quot;properties&quot;:{&quot;first_name&quot;:&quot;my_new_name_21868040732&quot;,&quot;name&quot;:&quot;my_new_name_21868040732 MyVeryFirtLastName&quot;,&quot;last_name&quot;:&quot;MyVeryFirtLastName&quot;,&quot;email&quot;:&quot;testemail6341984558@gmail.com&quot;},&quot;group_id&quot;:&quot;d6abb745f70a489a95e018c942b895a5&quot;,&quot;create_time&quot;:1620908466000,&quot;email&quot;:&quot;temp578012783764@email.com&quot;,&quot;email_verified&quot;:true}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: account_id_not_provided</div>
+    <pre class="example"><code>{&quot;code&quot;:90,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1584713800}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: account_info_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:93,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getSubscriberPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_subscriber</code></pre></div>
+    <div class="method-summary">Gets information associated to a subscriber (<span class="nickname">getSubscriberPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_subscriber_body">get_subscriber_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;target_id&quot; : &quot;91ed587fe46449b394725ec005347a70&quot;,
+  &quot;target_type&quot; : 1
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: subscriber_info</div>
+    <pre class="example"><code>{&quot;subscription_type&quot;:2,&quot;operator&quot;:&quot;operator_name&quot;,&quot;port_in_state&quot;:1,&quot;blocked&quot;:false,&quot;referral_code&quot;:&quot;7Z0HE1&quot;,&quot;misc&quot;:{},&quot;cardinality&quot;:10567,&quot;first_activation&quot;:1620907400000,&quot;create_time&quot;:1620907400743,&quot;is_privileged&quot;:true,&quot;msisdn&quot;:&quot;&quot;,&quot;subscriber_id&quot;:&quot;91ed587fe46449b394725ec005347a70&quot;,&quot;created&quot;:1584889821,&quot;associated_group_ids&quot;:[],&quot;privileges_mask&quot;:2,&quot;referred_by&quot;:&quot;&quot;,&quot;sub_flags&quot;:{&quot;push_notifications&quot;:3},&quot;properties&quot;:{&quot;used_trial&quot;:false,&quot;reservation_id&quot;:&quot;14137937617&quot;,&quot;device_id&quot;:&quot;3be8f15d-3de5-419b-bdd7-94feb044c296&quot;,&quot;is_privileged&quot;:true},&quot;associated_imsis&quot;:[287627043570738],&quot;is_blocked&quot;:false,&quot;primary_account_id&quot;:&quot;3c75f5d9403c4e93b1ebd3e219977de2&quot;,&quot;port_in_req_id&quot;:&quot;&quot;,&quot;state&quot;:1,&quot;port_in_external_id&quot;:&quot;&quot;,&quot;port_out_state&quot;:1,&quot;user_owner&quot;:&quot;ce6794f9883f1ad19b1bd5d013aa5891&quot;,&quot;code&quot;:0,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1584711568}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: subscriber_id_not_provided</div>
+    <pre class="example"><code>{&quot;code&quot;:90,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1584713800}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: subscriber_info_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:99,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getUserPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get_user</code></pre></div>
+    <div class="method-summary">Gets operator-defined properties of a user (<span class="nickname">getUserPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_user_body">get_user_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;target_id&quot; : &quot;20v29uvn2393d022i3nf023in2&quot;,
+  &quot;target_type&quot; : 3
+}</code></span></div>    </div>  <!--  field-items  -->
+
+    <h3 class="field-label">Request headers</h3>
+    <div class="field-items">
+    </div>  <!--  field-items  -->
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_3">inline_response_200_3</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "operator_name" : "operator_name",
+  "user_id" : "user_id",
+  "permissions" : [ {
+    "role_name" : "superadmin",
+    "target_type" : 0,
+    "target_id" : "20v29uvn2393d022i3nf023in2"
+  }, {
+    "role_name" : "superadmin",
+    "target_type" : 0,
+    "target_id" : "20v29uvn2393d022i3nf023in2"
+  } ],
+  "flags" : { },
+  "owned_resources" : { },
+  "notification_info" : { },
+  "creds" : [ {
+    "verified" : true,
+    "id_type" : "id_type",
+    "id" : "id"
+  }, {
+    "verified" : true,
+    "id_type" : "id_type",
+    "id" : "id"
+  } ],
+  "properties" : { }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Request successful
+        <a href="#inline_response_200_3">inline_response_200_3</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{&quot;code&quot;:0,&quot;module&quot;:&quot;USER&quot;,&quot;properties&quot;:{&quot;first_name&quot;:&quot;John&quot;,&quot;last_name&quot;:&quot;Doe&quot;},&quot;operator_name&quot;:&quot;operator_name&quot;,&quot;user_id&quot;:&quot;3c078590b6714761ba897027508cb191&quot;,&quot;owned_resources&quot;:{&quot;015ff9a01f0f433f80d1fa43843ea25b&quot;:2,&quot;q323v2inv2v39uvn3q0q3vn03qivq3iv&quot;:1},&quot;flags&quot;:{&quot;email_notifications&quot;:0},&quot;notification_info&quot;:{&quot;578012783764&quot;:&quot;msisdn&quot;,&quot;test_google328190540164@google.com&quot;:&quot;email&quot;},&quot;creds&quot;:{&quot;578012783764&quot;:2},&quot;create_time&quot;:1620908466831,&quot;cardinality&quot;:1052857,&quot;server_time&quot;:1584890277}</code></pre>
+    <h4 class="field-label">400</h4>
+    Invalid request. This may be due to invalid JSON, or invalid/missing
+fields in the request body.
+        <a href="#failed_request_body">failed_request_body</a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: user_info_not_found</div>
+    <pre class="example"><code>{&quot;code&quot;:117,&quot;module&quot;:&quot;USER&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: user_id_not_provided</div>
+    <pre class="example"><code>{&quot;code&quot;:36,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1584713800}</code></pre>
+    <h4 class="field-label">403</h4>
+    Authorization failure
+        <a href="#"></a>
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: failed_auth</div>
+    <pre class="example"><code>{&quot;code&quot;:12,&quot;module&quot;:&quot;AUTH&quot;,&quot;server_time&quot;:1583152159}</code></pre>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#500_response">500_response</a>
+  </div> <!--  method  -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#500_response"><code>500_response</code></a></li>
+    <li><a href="#add_imsis_body"><code>add_imsis_body</code></a></li>
+    <li><a href="#add_referral_body"><code>add_referral_body</code></a></li>
+    <li><a href="#address_map"><code>address_map</code></a></li>
+    <li><a href="#address_parts"><code>address_parts</code></a></li>
+    <li><a href="#address_type"><code>address_type</code></a></li>
+    <li><a href="#assign_referral_code_body"><code>assign_referral_code_body</code></a></li>
+    <li><a href="#failed_request_body"><code>failed_request_body</code></a></li>
+    <li><a href="#get_account_body"><code>get_account_body</code></a></li>
+    <li><a href="#get_addresses_body"><code>get_addresses_body</code></a></li>
+    <li><a href="#get_credentials_body"><code>get_credentials_body</code></a></li>
+    <li><a href="#get_ids_from_reverse_index_array_of_id_obj"><code>get_ids_from_reverse_index_array_of_id_obj</code></a></li>
+    <li><a href="#get_ids_from_reverse_index_body"><code>get_ids_from_reverse_index_body</code></a></li>
+    <li><a href="#get_referral_history_body"><code>get_referral_history_body</code></a></li>
+    <li><a href="#get_subscriber_body"><code>get_subscriber_body</code></a></li>
+    <li><a href="#get_um_entities_body"><code>get_um_entities_body</code></a></li>
+    <li><a href="#get_um_entities_entities"><code>get_um_entities_entities</code></a></li>
+    <li><a href="#get_um_entities_get"><code>get_um_entities_get</code></a></li>
+    <li><a href="#get_user_body"><code>get_user_body</code></a></li>
+    <li><a href="#hierarchy"><code>hierarchy</code></a></li>
+    <li><a href="#imsis"><code>imsis</code></a></li>
+    <li><a href="#inline_response_200"><code>inline_response_200</code></a></li>
+    <li><a href="#inline_response_200_1"><code>inline_response_200_1</code></a></li>
+    <li><a href="#inline_response_200_2"><code>inline_response_200_2</code></a></li>
+    <li><a href="#inline_response_200_3"><code>inline_response_200_3</code></a></li>
+    <li><a href="#inline_response_200_3_creds"><code>inline_response_200_3_creds</code></a></li>
+    <li><a href="#inline_response_200_3_permissions"><code>inline_response_200_3_permissions</code></a></li>
+    <li><a href="#inline_response_200_4"><code>inline_response_200_4</code></a></li>
+    <li><a href="#inline_response_200_5"><code>inline_response_200_5</code></a></li>
+    <li><a href="#inline_response_200_5_history"><code>inline_response_200_5_history</code></a></li>
+    <li><a href="#inline_response_200_5_history_referral_history"><code>inline_response_200_5_history_referral_history</code></a></li>
+    <li><a href="#target_types"><code>target_types</code></a></li>
+    <li><a href="#update_flags_body"><code>update_flags_body</code></a></li>
+    <li><a href="#update_properties_body"><code>update_properties_body</code></a></li>
+    <li><a href="#update_state_body"><code>update_state_body</code></a></li>
+    <li><a href="#update_trial_property_for_user_body"><code>update_trial_property_for_user_body</code></a></li>
+    <li><a href="#update_um_entities_body"><code>update_um_entities_body</code></a></li>
+    <li><a href="#update_um_entities_entities"><code>update_um_entities_entities</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="500_response"><code>500_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Internal server error</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="add_imsis_body"><code>add_imsis_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">imsis </div><div class="param-desc"><span class="param-type"><a href="#imsis">imsis</a></span>  </div>
+<div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> subscriber id </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> type of ID - only subscriber type allowed for this route </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="add_referral_body"><code>add_referral_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Subscriber id </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type - only subscriber type allowed </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">referral_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Subscriber id of referrer </div>
+          <div class="param-desc"><span class="param-type">example: 8241efdeb48f4aff86461923252eab87</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="address_map"><code>address_map</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">We couldn't predict exactly what fields address_parts object will contain so it's left to be dynamic. In general, it should at least contain the field &lt;strong&gt;address&lt;/strong&gt;. For some operators, we might have special requirements when adding an address. Only tenants and sub tenants will be able to see tax_area_id.</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="address_parts"><code>address_parts</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">address (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> address line </div>
+<div class="param">city (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> the city part of the address </div>
+<div class="param">zip (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Zip code of the address </div>
+<div class="param">country (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Country </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="address_type"><code>address_type</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">&lt;p&gt; 1 - Unknown &lt;/p&gt;
+&lt;p&gt; 2 - Billing &lt;/p&gt;
+&lt;p&gt; 3 - Shipping &lt;/p&gt;
+&lt;p&gt; 4 - Service (Only 1 service address can exist per account) &lt;/p&gt;
+&lt;p&gt; 5 - Permanent &lt;/p&gt;
+&lt;p&gt; 6 - Mailing &lt;/p&gt;
+&lt;p&gt; 7 - e911 (Only 1 e911 address can exist per subscriber) &lt;/p&gt;
+</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="assign_referral_code_body"><code>assign_referral_code_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Subscriber id </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type - only subscriber type allowed </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">referral_code </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Subscriber id of referrer </div>
+          <div class="param-desc"><span class="param-type">example: 8241efdeb48f4aff86461923252eab87</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="failed_request_body"><code>failed_request_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">message description for a failed request</div>
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module </div>
+          <div class="param-desc"><span class="param-type">example: COMMON</span></div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1559782251</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> invalid json </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_account_body"><code>get_account_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Mandatory ID of the account that is being fetched. </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Type of ID - only account type allowed for this route. </div>
+<div class="param">columns_to_read (optional)</div><div class="param-desc"><span class="param-type"><a href="#array">List</a></span> Columns_to_read from account. If not set, get_account will return all columns </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_addresses_body"><code>get_addresses_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> account or subscriber id </div>
+          <div class="param-desc"><span class="param-type">example: 91ed587fe46449b394725ec005347a70</span></div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Id type - account or subscriber type </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">token_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> The token type the route was called with (6 for internal routes) </div>
+<div class="param">address_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#address_type">address_type</a></span>  </div>
+<div class="param">address_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The address id to be retrieved. If not set, route will return all adresses for this user/subscriber </div>
+          <div class="param-desc"><span class="param-type">example: d18f6fc599af43f6afb700844cf006d0</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_credentials_body"><code>get_credentials_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">identifier </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> value of identifier </div>
+          <div class="param-desc"><span class="param-type">example: example_email@gmail.com</span></div>
+<div class="param">identifier_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> user_creds_type (e.g. email_secret, msisdn...) </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_ids_from_reverse_index_array_of_id_obj"><code>get_ids_from_reverse_index_array_of_id_obj</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">id_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> _reverse_id - type of id to get entity from </div>
+<div class="param">id_value (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> value of id </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_ids_from_reverse_index_body"><code>get_ids_from_reverse_index_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">array_of_id_obj </div><div class="param-desc"><span class="param-type"><a href="#get_ids_from_reverse_index_array_of_id_obj">array[get_ids_from_reverse_index_array_of_id_obj]</a></span>  </div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> ID type - type of entity we want to fetch. Default == 1 (subscriber) </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_referral_history_body"><code>get_referral_history_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> subscriber id </div>
+          <div class="param-desc"><span class="param-type">example: 91ed587fe46449b394725ec005347a70</span></div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Id type - subscriber type </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_subscriber_body"><code>get_subscriber_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of the subscriber that is being fetched. </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> type of ID - only subscriber type allowed for this route </div>
+<div class="param">columns_to_read (optional)</div><div class="param-desc"><span class="param-type"><a href="#array">List</a></span> Columns_to_read from subscriber. If not set, get_usubscriber will return all columns </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_um_entities_body"><code>get_um_entities_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">entities (optional)</div><div class="param-desc"><span class="param-type"><a href="#get_um_entities_entities">array[get_um_entities_entities]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_um_entities_entities"><code>get_um_entities_entities</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> if taget_id is present, then target_type must be too </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> if taget_type is present, then taget_id must be too </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">reverse_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> if reverse_id is present, then reverse_type must be too </div>
+          <div class="param-desc"><span class="param-type">example: test@email.com</span></div>
+<div class="param">reverse_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> if reverse_type is present, then reverse_id must be too </div>
+          <div class="param-desc"><span class="param-type">example: email</span></div>
+<div class="param">get (optional)</div><div class="param-desc"><span class="param-type"><a href="#get_um_entities_get">array[get_um_entities_get]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_um_entities_get"><code>get_um_entities_get</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">columns_to_read (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_user_body"><code>get_user_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Mandatory ID of the user that is being fetched. </div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Type of ID - only user type allowed for this route. For service token it's value will be ID_TYPE.USER (3). If target_id is not passed this shouldnt be either. </div>
+<div class="param">columns_to_read (optional)</div><div class="param-desc"><span class="param-type"><a href="#array">List</a></span> Columns_to_read from user. If not set, get_user will return all columns </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="hierarchy"><code>hierarchy</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">&lt;p&gt;Can be subscriber level, or account. This defines wheter the specified operation will be ran on subscriber or account.&lt;/p&gt;
+&lt;p&gt; 1 - Subscriber &lt;/p&gt;
+&lt;p&gt; 2 - Account &lt;/p&gt;
+</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="imsis"><code>imsis</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200"><code>inline_response_200</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+          <div class="param-desc"><span class="param-type">example: USER</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_1"><code>inline_response_200_1</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">array[Object]</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: {&quot;d9c121a0c7ea4f218d51cb22bab03ca0&quot;:[null,[{&quot;user_owner&quot;:&quot;e142c3afdb274c5694f9411290adf3fc&quot;}]],&quot;email_50743930525@email.com&quot;:[null,[{&quot;user_owner&quot;:&quot;e142c3afdb274c5694f9411290adf3fc&quot;}]]}</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_2"><code>inline_response_200_2</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> relevant module name </div>
+          <div class="param-desc"><span class="param-type">example: USER</span></div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> return code </div>
+<div class="param">identifier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: example_email@gmail.com</span></div>
+<div class="param">identifier_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">secret (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: secret</span></div>
+<div class="param">user_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">verified (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: true</span></div>
+<div class="param">operator_name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: operator_name</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_3"><code>inline_response_200_3</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">user_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of the user </div>
+<div class="param">properties (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> User properties that are stored on user creation and can be updated via update_info route. Only properties allowed on the server side can be updated, so it is needed to communicate to us if new property needs to be updated </div>
+<div class="param">operator_name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Operator name to which user belongs </div>
+<div class="param">owned_resources (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> IDs of all the entities (susbcribers/accounts) that user is owner of. Key-value pairs where keys are IDs of owned resources and values are enumeration values representing which is the type of ID </div>
+<div class="param">flags (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> Contains user flags </div>
+<div class="param">notification_info (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> Information about the ways to send notifications to the user, can contain notificaiton msisdn/email etc. Key-value pairs where key is the email/msisdn used for notifications and values are types of the notification resources. </div>
+<div class="param">creds (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_3_creds">array[inline_response_200_3_creds]</a></span> Array of credentials objects </div>
+<div class="param">permissions (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_3_permissions">array[inline_response_200_3_permissions]</a></span> Ids, their types and role name of the targets that user has access to </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_3_creds"><code>inline_response_200_3_creds</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Identifier that's been used when registered and that is used for login </div>
+<div class="param">id_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Type of mentioned identifier </div>
+<div class="param">verified (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Flag indicating whether the user completed the email verification flow </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_3_permissions"><code>inline_response_200_3_permissions</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Identifier of subscriber, account or user that this user has access to </div>
+          <div class="param-desc"><span class="param-type">example: 20v29uvn2393d022i3nf023in2</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#target_types">target_types</a></span>  </div>
+<div class="param">role_name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Name of the role representing users' access to the corresponding id </div>
+          <div class="param-desc"><span class="param-type">example: superadmin</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_4"><code>inline_response_200_4</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">request_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span>  </div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">address_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> Address_id of account/subscriber address. If account/subscriber has multiple addresses and address_id is not specified in request, all addresses will be in response as seperate objects </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_5"><code>inline_response_200_5</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">history (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_5_history">inline_response_200_5_history</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_5_history"><code>inline_response_200_5_history</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">referral_history (optional)</div><div class="param-desc"><span class="param-type"><a href="#inline_response_200_5_history_referral_history">array[inline_response_200_5_history_referral_history]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_5_history_referral_history"><code>inline_response_200_5_history_referral_history</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">refer_month (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 5</span></div>
+<div class="param">operator (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: lotusflaretelecom</span></div>
+<div class="param">refer_year (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 2021</span></div>
+<div class="param">refer_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1621021271</span></div>
+<div class="param">referred_subscriber_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 97550f20f4154ff094d0437543cc5374</span></div>
+<div class="param">subscriber_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 5093df1a587d430fac80ed87f169d95b</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="target_types"><code>target_types</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">&lt;p&gt;Target type defines the type of the ID against which we want to perform certain action&lt;/p&gt;
+&lt;p&gt; 1 - Subscriber target type
+&lt;p&gt; 2 - Account target type
+&lt;p&gt; 3 - User target type
+</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_flags_body"><code>update_flags_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of target that flags should be updated for </div>
+          <div class="param-desc"><span class="param-type">example: 03f29g23n32u9nd239nd2932cnu3</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type - subscriber and account type allowed </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">flags </div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> Key-value pairs with the flags that should be updated where key is string that represents name of the flag and value is a boolean value to which flag is being set to. Flag must be enabled on server side in order for update to work. Even tho flag values in info responses are integers updating with boolean works because server does the conversion. </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_properties_body"><code>update_properties_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of entity whose properties we want to update. Can be account/subscriber </div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#target_types">target_types</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_state_body"><code>update_state_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Account or subscriber state </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of account or subscriber that is being fetched. </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> type of ID - account or subscriber </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_trial_property_for_user_body"><code>update_trial_property_for_user_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 91ed587fe46449b394725ec005347a70</span></div>
+<div class="param">target_type </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">trial_used </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: true</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_um_entities_body"><code>update_um_entities_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">entities (optional)</div><div class="param-desc"><span class="param-type"><a href="#update_um_entities_entities">array[update_um_entities_entities]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_um_entities_entities"><code>update_um_entities_entities</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">target_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Id of the entity that is being updated </div>
+          <div class="param-desc"><span class="param-type">example: sdfggt235678iygbsw146357f246gg</span></div>
+<div class="param">target_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Id type </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">columns_to_update (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span> Columns to update </div>
+          <div class="param-desc"><span class="param-type">example: {&quot;payment_gateway_id&quot;:&quot;783925810&quot;}</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  </body>
+</html>
+</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts13">Created with the Personal Edition of HelpNDoc: </span><a class="rvts14" href="https://www.helpndoc.com/create-epub-ebooks">Full-featured EPub generator</a></p>
+
+            </div>
+            
+            
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
