@@ -1,0 +1,1029 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Custom Events</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Custom Events">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Custom Events" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LotusFlare API Reference Guide" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LotusFlare API Reference Guide</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="CustomEvents"
+		  data-hnd-context="21"
+		  data-hnd-title="Custom Events"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="APIs.html">APIs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="APIs.html" title="APIs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="eSIMManager.html" title="eSIM Manager" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="PeriscopeMetrics.html" title="Periscope Metrics" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6"> html
+<html>
+  <head>
+    <title>Custom Events CRUD API</title>
+    <style type="text/css">
+      body {
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>Custom Events CRUD API</h1>
+    <div class="app-desc">No description provided (generated by Swagger Codegen https://github.com/swagger-api/swagger-codegen)</div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+    <div class="app-desc">Version: 1.0.0</div>
+    <div class="app-desc">BasePath:/{basePath}</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Default">Default</a></h4>
+  <ul>
+  <li><a href="#definitionGetAllGet"><code><span class="http-method">get</span> /definition/get_all</code></a></li>
+  <li><a href="#schemaCreatePost"><code><span class="http-method">post</span> /schema/create</code></a></li>
+  <li><a href="#schemaDeletePost"><code><span class="http-method">post</span> /schema/delete</code></a></li>
+  <li><a href="#schemaGetAllGet"><code><span class="http-method">get</span> /schema/get_all</code></a></li>
+  <li><a href="#schemaGetPropertyTypesGet"><code><span class="http-method">get</span> /schema/get_property_types</code></a></li>
+  <li><a href="#schemaGetRequiredFieldsGet"><code><span class="http-method">get</span> /schema/get_required_fields</code></a></li>
+  <li><a href="#schemaUpdatePost"><code><span class="http-method">post</span> /schema/update</code></a></li>
+  </ul>
+
+  <h1><a name="Default">Default</a></h1>
+  <div class="method"><a name="definitionGetAllGet"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /definition/get_all</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">definitionGetAllGet</span>)</div>
+    <div class="method-notes">To be used from portal</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#events_definitions">events_definitions</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>""</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Contains all non-deleted event definitions including both published and unpublished
+        <a href="#events_definitions">events_definitions</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaCreatePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /schema/create</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaCreatePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#event_schema_def">event_schema_def</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#success_response">success_response</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>""</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    
+        <a href="#success_response">success_response</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaDeletePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /schema/delete</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaDeletePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#schema_id_def">schema_id_def</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaGetAllGet"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /schema/get_all</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaGetAllGet</span>)</div>
+    <div class="method-notes">To be used internally by services</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#events_avro_definitions">events_avro_definitions</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>""</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Contains only non-deleted and published event schemas
+        <a href="#events_avro_definitions">events_avro_definitions</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaGetPropertyTypesGet"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /schema/get_property_types</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaGetPropertyTypesGet</span>)</div>
+    <div class="method-notes">For use by the user interface. Returns an array of supported event property type</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#supported_types">supported_types</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ "", "" ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    
+        <a href="#supported_types">supported_types</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaGetRequiredFieldsGet"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /schema/get_required_fields</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaGetRequiredFieldsGet</span>)</div>
+    <div class="method-notes">For use by the user interface. Returns an array of event fields required for the server and their types</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#required_fields">required_fields</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "name" : "name",
+  "type" : "type"
+}, {
+  "name" : "name",
+  "type" : "type"
+} ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    
+        <a href="#required_fields">required_fields</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="schemaUpdatePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /schema/update</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">schemaUpdatePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#event_definition_with_id">event_definition_with_id</a> (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#success_response">success_response</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>""</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    
+        <a href="#success_response">success_response</a>
+    <h4 class="field-label">400</h4>
+    
+        <a href="#error_response">error_response</a>
+    <h4 class="field-label">500</h4>
+    
+        <a href="#error_response">error_response</a>
+  </div> <!--  method  -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#error_response"><code>error_response</code></a></li>
+    <li><a href="#event_avro_schema_def"><code>event_avro_schema_def</code></a></li>
+    <li><a href="#event_avro_schema_def_fields"><code>event_avro_schema_def_fields</code></a></li>
+    <li><a href="#event_definition_avro"><code>event_definition_avro</code></a></li>
+    <li><a href="#event_definition_with_id"><code>event_definition_with_id</code></a></li>
+    <li><a href="#event_schema_def"><code>event_schema_def</code></a></li>
+    <li><a href="#event_schema_def_event_definition"><code>event_schema_def_event_definition</code></a></li>
+    <li><a href="#event_schema_def_event_definition_fields"><code>event_schema_def_event_definition_fields</code></a></li>
+    <li><a href="#events_avro_definitions"><code>events_avro_definitions</code></a></li>
+    <li><a href="#events_definitions"><code>events_definitions</code></a></li>
+    <li><a href="#flow_control_def"><code>flow_control_def</code></a></li>
+    <li><a href="#full_event_definition"><code>full_event_definition</code></a></li>
+    <li><a href="#meta_data_def"><code>meta_data_def</code></a></li>
+    <li><a href="#meta_data_def_meta_data"><code>meta_data_def_meta_data</code></a></li>
+    <li><a href="#required_fields"><code>required_fields</code></a></li>
+    <li><a href="#required_fields_inner"><code>required_fields_inner</code></a></li>
+    <li><a href="#schema_id_def"><code>schema_id_def</code></a></li>
+    <li><a href="#success_response"><code>success_response</code></a></li>
+    <li><a href="#success_response_fields"><code>success_response_fields</code></a></li>
+    <li><a href="#supported_types"><code>supported_types</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="error_response"><code>error_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> &lt;code&gt;1&lt;/code&gt; - cassandra error &lt;code&gt;2&lt;/code&gt; - not found error &lt;code&gt;3&lt;/code&gt; - name already exists &lt;code&gt;4&lt;/code&gt; - field is missing (required field or field from already stored event schema) &lt;code&gt;5&lt;/code&gt; - update forbidden(changing name and changing type of already stored field is forbidden) &lt;code&gt;6&lt;/code&gt; - name is empty &lt;code&gt;7&lt;/code&gt; - wrong field type(field of a required fields is incorrect) </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">1</div><div class="param-enum">2</div><div class="param-enum">3</div><div class="param-enum">4</div><div class="param-enum">5</div><div class="param-enum">6</div><div class="param-enum">7</div>
+<div class="param">msg (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> field displaying possible error reason </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_avro_schema_def"><code>event_avro_schema_def</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">namespace </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">type </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">doc </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">fields </div><div class="param-desc"><span class="param-type"><a href="#event_avro_schema_def_fields">array[event_avro_schema_def_fields]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_avro_schema_def_fields"><code>event_avro_schema_def_fields</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">type </div><div class="param-desc"><span class="param-type"><a href="#"></a></span>  </div>
+      <div class="param-desc"><span class="param-type">anyOf:</span>
+      </div>
+<div class="param">default (optional)</div><div class="param-desc"><span class="param-type"><a href="#"></a></span> Default value to be used if the value not provided in the event.
+In fact &lt;code&gt;default&lt;/code&gt; field type should be the same as defined by field &lt;code&gt;type&lt;/code&gt;.
+Since validation should be done against AVRO type it should be additional portal/server validation logic. </div>
+      <div class="param-desc"><span class="param-type">oneOf:</span>
+      </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_definition_avro"><code>event_definition_avro</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">flow_control </div><div class="param-desc"><span class="param-type"><a href="#flow_control_def">flow_control_def</a></span>  </div>
+<div class="param">active_schema </div><div class="param-desc"><span class="param-type"><a href="#event_avro_schema_def">event_avro_schema_def</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_definition_with_id"><code>event_definition_with_id</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">schema_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> schema_id should be UUID format </div>
+<div class="param">flow_control </div><div class="param-desc"><span class="param-type"><a href="#flow_control_def">flow_control_def</a></span>  </div>
+<div class="param">event_definition </div><div class="param-desc"><span class="param-type"><a href="#event_schema_def_event_definition">event_schema_def_event_definition</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_schema_def"><code>event_schema_def</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">flow_control </div><div class="param-desc"><span class="param-type"><a href="#flow_control_def">flow_control_def</a></span>  </div>
+<div class="param">event_definition </div><div class="param-desc"><span class="param-type"><a href="#event_schema_def_event_definition">event_schema_def_event_definition</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_schema_def_event_definition"><code>event_schema_def_event_definition</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">event_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">description </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> information about event producer(s), business logic, etc. </div>
+<div class="param">fields </div><div class="param-desc"><span class="param-type"><a href="#event_schema_def_event_definition_fields">array[event_schema_def_event_definition_fields]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="event_schema_def_event_definition_fields"><code>event_schema_def_event_definition_fields</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> field name should be in snake_case </div>
+<div class="param">type </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> only valid AVRO types </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">string</div><div class="param-enum">int</div><div class="param-enum">long</div><div class="param-enum">double</div><div class="param-enum">boolean</div>
+<div class="param">mandatory </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">default (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">datasource (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> supported LF data sources </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="events_avro_definitions"><code>events_avro_definitions</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">0</div>
+<div class="param">event_schemas (optional)</div><div class="param-desc"><span class="param-type"><a href="#">array[null]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="events_definitions"><code>events_definitions</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">0</div>
+<div class="param">event_definitions (optional)</div><div class="param-desc"><span class="param-type"><a href="#full_event_definition">array[full_event_definition]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="flow_control_def"><code>flow_control_def</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">is_trigger </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">is_persisted </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="full_event_definition"><code>full_event_definition</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">schema_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> schema_id should be UUID format </div>
+<div class="param">meta_data </div><div class="param-desc"><span class="param-type"><a href="#meta_data_def_meta_data">meta_data_def_meta_data</a></span>  </div>
+<div class="param">flow_control </div><div class="param-desc"><span class="param-type"><a href="#flow_control_def">flow_control_def</a></span>  </div>
+<div class="param">event_definition </div><div class="param-desc"><span class="param-type"><a href="#event_schema_def_event_definition">event_schema_def_event_definition</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="meta_data_def"><code>meta_data_def</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">meta_data </div><div class="param-desc"><span class="param-type"><a href="#meta_data_def_meta_data">meta_data_def_meta_data</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="meta_data_def_meta_data"><code>meta_data_def_meta_data</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">create_time </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> timestamp in milliseconds </div>
+<div class="param">update_time </div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> timestamp in milliseconds </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">state (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="required_fields"><code>required_fields</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="required_fields_inner"><code>required_fields_inner</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="schema_id_def"><code>schema_id_def</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">schema_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> schema_id should be UUID format </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="success_response"><code>success_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">0</div>
+<div class="param">result (optional)</div><div class="param-desc"><span class="param-type"><a href="#event_definition_with_id">event_definition_with_id</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="success_response_fields"><code>success_response_fields</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">0</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="supported_types"><code>supported_types</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  </body>
+</html>
+</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts13">Created with the Personal Edition of HelpNDoc: </span><a class="rvts14" href="https://www.helpndoc.com">Easy EBook and documentation generator</a></p>
+
+            </div>
+            
+            
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
