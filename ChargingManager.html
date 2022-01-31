@@ -1,0 +1,2121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Charging Manager</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Charging Manager">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Charging Manager" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="index" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>index</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ChargingManager"
+		  data-hnd-context="11"
+		  data-hnd-title="Charging Manager"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="APIs.html">APIs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="APIs.html" title="APIs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ProductCatalog.html" title="Product Catalog" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ContentManagement.html" title="Content Management" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6"> html
+<html>
+  <head>
+    <title>LotusFlare Charging Manager</title>
+    <style type="text/css">
+      body {
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>LotusFlare Charging Manager</h1>
+    <div class="app-desc">Charging Manager Routes</div>
+    <div class="app-desc">More information: <a href="http://www.lotusflare.com">http://www.lotusflare.com</a></div>
+    <div class="app-desc">Contact Info: <a href="tech@lotusflare.com">tech@lotusflare.com</a></div>
+    <div class="app-desc">Version: 1.0</div>
+    <div class="app-desc">BasePath:/api/v3/charging</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#ChargingEntities">ChargingEntities</a></h4>
+  <ul>
+  <li><a href="#addPost"><code><span class="http-method">post</span> /add</code></a></li>
+  <li><a href="#getPost"><code><span class="http-method">post</span> /get</code></a></li>
+  <li><a href="#updatePost"><code><span class="http-method">post</span> /update</code></a></li>
+  <li><a href="#updateStatePost"><code><span class="http-method">post</span> /update_state</code></a></li>
+  </ul>
+  <h4><a href="#Routes">Routes</a></h4>
+  <ul>
+  <li><a href="#dataPost"><code><span class="http-method">post</span> /data</code></a></li>
+  <li><a href="#deductBucketPost"><code><span class="http-method">post</span> /deduct_bucket</code></a></li>
+  <li><a href="#smsPost"><code><span class="http-method">post</span> /sms</code></a></li>
+  <li><a href="#topUpPost"><code><span class="http-method">post</span> /top_up</code></a></li>
+  <li><a href="#voicePost"><code><span class="http-method">post</span> /voice</code></a></li>
+  <li><a href="#voiceTapPost"><code><span class="http-method">post</span> /voice_tap</code></a></li>
+  <li><a href="#walletCommitPost"><code><span class="http-method">post</span> /wallet_commit</code></a></li>
+  <li><a href="#walletReleasePost"><code><span class="http-method">post</span> /wallet_release</code></a></li>
+  <li><a href="#walletReservePost"><code><span class="http-method">post</span> /wallet_reserve</code></a></li>
+  </ul>
+
+  <h1><a name="ChargingEntities">ChargingEntities</a></h1>
+  <div class="method"><a name="addPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /add</code></pre></div>
+    <div class="method-summary">Add charging entity (<span class="nickname">addPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#add_body">add_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;$ref&quot; : &quot;#/components/examples/ratingGroupExample&quot;
+}</code></span></div>    </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING",
+  "id" : "f4258c7518ff405c87dc32ef0720dba2"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful adding of charging entity
+        <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failedAddChargingEntity">failedAddChargingEntity</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="getPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /get</code></pre></div>
+    <div class="method-summary">Get one or more charging entities (<span class="nickname">getPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#get_body">get_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{ }</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful update state of charging entity
+        <a href="#Object">Object</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failedAddChargingEntity">failedAddChargingEntity</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updatePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update</code></pre></div>
+    <div class="method-summary">Update charging entity (<span class="nickname">updatePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_body">update_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+            <div class="param-desc"><span class="param-type">example: <code>{
+  &quot;$ref&quot; : &quot;#/components/examples/ratingGroupUpdateExample&quot;
+}</code></span></div>    </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING",
+  "id" : "f4258c7518ff405c87dc32ef0720dba2"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful adding of charging entity
+        <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failedAddChargingEntity">failedAddChargingEntity</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="updateStatePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /update_state</code></pre></div>
+    <div class="method-summary">Update state charging entity (<span class="nickname">updateStatePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#update_state_body">update_state_body</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING",
+  "id" : "f4258c7518ff405c87dc32ef0720dba2"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful update state of charging entity
+        <a href="#addChargingEntityResponse">addChargingEntityResponse</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failedAddChargingEntity">failedAddChargingEntity</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <h1><a name="Routes">Routes</a></h1>
+  <div class="method"><a name="dataPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /data</code></pre></div>
+    <div class="method-summary">Data charging (<span class="nickname">dataPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#dataChargingRequestBody">dataChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#dataChargingResponseBody">dataChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "operator_name" : "operator_name",
+  "service_type" : 6,
+  "trigger_rar" : true,
+  "code" : 0,
+  "module" : "CHARGING",
+  "session_id" : "session_id",
+  "imsi" : "imsi",
+  "msisdn" : "msisdn",
+  "transactions" : [ {
+    "reserve_response" : {
+      "server_time" : 1545667505,
+      "holding_time" : 9,
+      "is_final" : true,
+      "code" : 5,
+      "total_unit" : 2,
+      "threshold" : 3,
+      "validity_time" : 7
+    },
+    "rating_group" : 5,
+    "code" : 1,
+    "service_identifier" : "service_identifier",
+    "commit_response" : {
+      "server_time" : 1545667505,
+      "code" : 2
+    }
+  }, {
+    "reserve_response" : {
+      "server_time" : 1545667505,
+      "holding_time" : 9,
+      "is_final" : true,
+      "code" : 5,
+      "total_unit" : 2,
+      "threshold" : 3,
+      "validity_time" : 7
+    },
+    "rating_group" : 5,
+    "code" : 1,
+    "service_identifier" : "service_identifier",
+    "commit_response" : {
+      "server_time" : 1545667505,
+      "code" : 2
+    }
+  } ]
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#dataChargingResponseBody">dataChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="deductBucketPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /deduct_bucket</code></pre></div>
+    <div class="method-summary">Deduct amount from a specified bucket (<span class="nickname">deductBucketPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#deductBucketChargingRequestBody">deductBucketChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#deductBucketChargingResponseBody">deductBucketChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#deductBucketChargingResponseBody">deductBucketChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="smsPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /sms</code></pre></div>
+    <div class="method-summary">SMS charging (<span class="nickname">smsPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#smsChargingRequestBody">smsChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#smsChargingResponseBody">smsChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "reserve_response" : {
+    "unit" : 5,
+    "code" : 1,
+    "validity_time" : 5
+  },
+  "server_time" : 1545667505,
+  "operator_name" : "operator_name",
+  "service_type" : 6,
+  "code" : 0,
+  "module" : "CHARGING",
+  "session_id" : "session_id",
+  "imsi" : "imsi",
+  "commit_response" : {
+    "code" : 2
+  },
+  "msisdn" : "msisdn"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#smsChargingResponseBody">smsChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="topUpPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /top_up</code></pre></div>
+    <div class="method-summary">Top Up Charging Route (<span class="nickname">topUpPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#topUpChargingRequestBody">topUpChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#topUpChargingResponseBody">topUpChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING",
+  "wallets" : {
+    "wallet_type" : {
+      "amount" : "amount",
+      "negative" : "negative",
+      "grace_epoch" : 1,
+      "breakdown" : [ {
+        "code" : "code",
+        "initial" : "initial",
+        "left" : "left",
+        "used" : "used"
+      }, {
+        "code" : "code",
+        "initial" : "initial",
+        "left" : "left",
+        "used" : "used"
+      } ],
+      "max_amount" : "max_amount",
+      "active_epoch" : 6
+    }
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#topUpChargingResponseBody">topUpChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="voicePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /voice</code></pre></div>
+    <div class="method-summary">Voice charging (<span class="nickname">voicePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#voiceChargingRequestBody">voiceChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#voiceChargingResponseBody">voiceChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "reserve_response" : {
+    "unit" : 5,
+    "code" : 5,
+    "final_unit_action" : 7,
+    "validity_time" : 2
+  },
+  "server_time" : 1545667505,
+  "operator_name" : "operator_name",
+  "service_type" : 6,
+  "code" : 0,
+  "module" : "CHARGING",
+  "subscriber_state" : 1,
+  "session_id" : "session_id",
+  "imsi" : "imsi",
+  "commit_response" : {
+    "code" : 9
+  },
+  "msisdn" : "msisdn",
+  "announcement" : "announcement"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#voiceChargingResponseBody">voiceChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_voice_request_body">failed_voice_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_voice_request_body">failed_voice_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="voiceTapPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /voice_tap</code></pre></div>
+    <div class="method-summary">Voice TAP charging (<span class="nickname">voiceTapPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#voiceTapChargingRequestBody">voiceTapChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#voiceTapChargingResponseBody">voiceTapChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "operator_name" : "operator_name",
+  "service_type" : 6,
+  "code" : 0,
+  "module" : "CHARGING",
+  "subscriber_state" : 1,
+  "session_id" : "session_id",
+  "imsi" : "imsi",
+  "msisdn" : "msisdn"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#voiceTapChargingResponseBody">voiceTapChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="walletCommitPost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /wallet_commit</code></pre></div>
+    <div class="method-summary">Wallet Commit Charging Route (<span class="nickname">walletCommitPost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#walletCommitChargingRequestBody">walletCommitChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#walletCommitChargingResponseBody">walletCommitChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#walletCommitChargingResponseBody">walletCommitChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="walletReleasePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /wallet_release</code></pre></div>
+    <div class="method-summary">Wallet Release Charging Route (<span class="nickname">walletReleasePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#walletReleaseChargingRequestBody">walletReleaseChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#walletReleaseChargingResponseBody">walletReleaseChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#walletReleaseChargingResponseBody">walletReleaseChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+  <div class="method"><a name="walletReservePost"></a>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /wallet_reserve</code></pre></div>
+    <div class="method-summary">Wallet Reserve Charging Route (<span class="nickname">walletReservePost</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body <a href="#walletReserveChargingRequestBody">walletReserveChargingRequestBody</a> (required)</div>
+      
+            <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash;  </div>
+                </div>  <!--  field-items  -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#walletReserveChargingResponseBody">walletReserveChargingResponseBody</a>
+      
+    </div>
+
+    <!-- Todo: process Response Object and its headers, schema, examples  -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "reservation_id" : "reservation_id",
+  "server_time" : 1545667505,
+  "code" : 0,
+  "module" : "CHARGING"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successful charging operation
+        <a href="#walletReserveChargingResponseBody">walletReserveChargingResponseBody</a>
+    <h4 class="field-label">400</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">403</h4>
+    ACL or Authentication failure
+        <a href="#"></a>
+    <h4 class="field-label">422</h4>
+    For error code values please refer to the Errors.docx document
+        <a href="#failed_request_body">failed_request_body</a>
+    <h4 class="field-label">500</h4>
+    Server error
+        <a href="#"></a>
+  </div> <!--  method  -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#addChargingEntityResponse"><code>addChargingEntityResponse</code></a></li>
+    <li><a href="#add_body"><code>add_body</code></a></li>
+    <li><a href="#chargingEntityData"><code>chargingEntityData</code></a></li>
+    <li><a href="#dataChargingRequestBody"><code>dataChargingRequestBody</code></a></li>
+    <li><a href="#dataChargingResponseBody"><code>dataChargingResponseBody</code></a></li>
+    <li><a href="#dataCommitRequestBody"><code>dataCommitRequestBody</code></a></li>
+    <li><a href="#dataCommitResponseBody"><code>dataCommitResponseBody</code></a></li>
+    <li><a href="#dataReserveRequestBody"><code>dataReserveRequestBody</code></a></li>
+    <li><a href="#dataReserveResponseBody"><code>dataReserveResponseBody</code></a></li>
+    <li><a href="#dataTransaction"><code>dataTransaction</code></a></li>
+    <li><a href="#dataTransactionResponse"><code>dataTransactionResponse</code></a></li>
+    <li><a href="#deductBucketChargingRequestBody"><code>deductBucketChargingRequestBody</code></a></li>
+    <li><a href="#deductBucketChargingResponseBody"><code>deductBucketChargingResponseBody</code></a></li>
+    <li><a href="#failedAddChargingEntity"><code>failedAddChargingEntity</code></a></li>
+    <li><a href="#failed_request_body"><code>failed_request_body</code></a></li>
+    <li><a href="#failed_voice_request_body"><code>failed_voice_request_body</code></a></li>
+    <li><a href="#get_body"><code>get_body</code></a></li>
+    <li><a href="#policyCounterData"><code>policyCounterData</code></a></li>
+    <li><a href="#policyGroupData"><code>policyGroupData</code></a></li>
+    <li><a href="#policyRuleData"><code>policyRuleData</code></a></li>
+    <li><a href="#ratingGroupData"><code>ratingGroupData</code></a></li>
+    <li><a href="#smsChargingRequestBody"><code>smsChargingRequestBody</code></a></li>
+    <li><a href="#smsChargingRequestBody_commit"><code>smsChargingRequestBody_commit</code></a></li>
+    <li><a href="#smsChargingRequestBody_refund"><code>smsChargingRequestBody_refund</code></a></li>
+    <li><a href="#smsChargingResponseBody"><code>smsChargingResponseBody</code></a></li>
+    <li><a href="#smsChargingResponseBody_commit_response"><code>smsChargingResponseBody_commit_response</code></a></li>
+    <li><a href="#smsChargingResponseBody_reserve_response"><code>smsChargingResponseBody_reserve_response</code></a></li>
+    <li><a href="#topUpChargingRequestBody"><code>topUpChargingRequestBody</code></a></li>
+    <li><a href="#topUpChargingRequestBody_payment_info"><code>topUpChargingRequestBody_payment_info</code></a></li>
+    <li><a href="#topUpChargingResponseBody"><code>topUpChargingResponseBody</code></a></li>
+    <li><a href="#topUpChargingResponseBody_wallets"><code>topUpChargingResponseBody_wallets</code></a></li>
+    <li><a href="#update_body"><code>update_body</code></a></li>
+    <li><a href="#update_state_body"><code>update_state_body</code></a></li>
+    <li><a href="#voiceChargingRequestBody"><code>voiceChargingRequestBody</code></a></li>
+    <li><a href="#voiceChargingRequestBody_commit"><code>voiceChargingRequestBody_commit</code></a></li>
+    <li><a href="#voiceChargingResponseBody"><code>voiceChargingResponseBody</code></a></li>
+    <li><a href="#voiceChargingResponseBody_commit_response"><code>voiceChargingResponseBody_commit_response</code></a></li>
+    <li><a href="#voiceChargingResponseBody_reserve_response"><code>voiceChargingResponseBody_reserve_response</code></a></li>
+    <li><a href="#voiceTapChargingRequestBody"><code>voiceTapChargingRequestBody</code></a></li>
+    <li><a href="#voiceTapChargingRequestBody_commit"><code>voiceTapChargingRequestBody_commit</code></a></li>
+    <li><a href="#voiceTapChargingResponseBody"><code>voiceTapChargingResponseBody</code></a></li>
+    <li><a href="#walletCommitChargingRequestBody"><code>walletCommitChargingRequestBody</code></a></li>
+    <li><a href="#walletCommitChargingResponseBody"><code>walletCommitChargingResponseBody</code></a></li>
+    <li><a href="#walletReleaseChargingRequestBody"><code>walletReleaseChargingRequestBody</code></a></li>
+    <li><a href="#walletReleaseChargingResponseBody"><code>walletReleaseChargingResponseBody</code></a></li>
+    <li><a href="#walletReserveChargingRequestBody"><code>walletReserveChargingRequestBody</code></a></li>
+    <li><a href="#walletReserveChargingResponseBody"><code>walletReserveChargingResponseBody</code></a></li>
+    <li><a href="#walletType"><code>walletType</code></a></li>
+    <li><a href="#wallets"><code>wallets</code></a></li>
+    <li><a href="#wallets_breakdown"><code>wallets_breakdown</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="addChargingEntityResponse"><code>addChargingEntityResponse</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Add Charging Entity response</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: f4258c7518ff405c87dc32ef0720dba2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="add_body"><code>add_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">data </div><div class="param-desc"><span class="param-type"><a href="#chargingEntityData">chargingEntityData</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="chargingEntityData"><code>chargingEntityData</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataChargingRequestBody"><code>dataChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Request for data charging. Other than required fields, it also
+must include at least one of the two operations (reserve and commit)
+and at least one of the subscriber identifiers (IMSI and MSISDN)</div>
+    <div class="field-items">
+      <div class="param">is_failover (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Indicates that a failover happened and another OCF node is serving the session </div>
+<div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ocf_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Service identifier - denotes data, voice or SMS. Should always be 1 format: int32</div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> MSISDN of the user to be charged. Must exist if IMSI is not specified. </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> IMSI of the user to be charged. Must exist if MSISDN is not specified. </div>
+<div class="param">time </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">time_zone </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">cell_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imeisv (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">bearer (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mcc_a </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">apn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ggsn_info </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> IP of the core network serving node </div>
+<div class="param">is_fallback_mode (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">request_number </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">termination_cause (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">transactions </div><div class="param-desc"><span class="param-type"><a href="#dataTransaction">array[dataTransaction]</a></span>  </div>
+<div class="param">protocol_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> DIAMETER_GY = 1
+DIAMETER_RO = 2
+CAMEL = 3 </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataChargingResponseBody"><code>dataChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Only present if IMSI was provided in the request </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">trigger_rar </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">transactions </div><div class="param-desc"><span class="param-type"><a href="#dataTransactionResponse">array[dataTransactionResponse]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataCommitRequestBody"><code>dataCommitRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">download_unit (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">upload_unit (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">total_unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">is_final </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">reporting_reason (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataCommitResponseBody"><code>dataCommitResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataReserveRequestBody"><code>dataReserveRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">total_unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataReserveResponseBody"><code>dataReserveResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">total_unit (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">validity_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">holding_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">threshold (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">is_final (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataTransaction"><code>dataTransaction</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">rating_group </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">service_identifier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">reserve (optional)</div><div class="param-desc"><span class="param-type"><a href="#dataReserveRequestBody">dataReserveRequestBody</a></span>  </div>
+<div class="param">commit (optional)</div><div class="param-desc"><span class="param-type"><a href="#dataCommitRequestBody">dataCommitRequestBody</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="dataTransactionResponse"><code>dataTransactionResponse</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+<div class="param">rating_group </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">service_identifier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">reserve_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#dataReserveResponseBody">dataReserveResponseBody</a></span>  </div>
+<div class="param">commit_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#dataCommitResponseBody">dataCommitResponseBody</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="deductBucketChargingRequestBody"><code>deductBucketChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Deduct bucket request</div>
+    <div class="field-items">
+      <div class="param">bucket_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> ID of the bucket to be deducted from </div>
+<div class="param">amount </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> amount to be deducted </div>
+<div class="param">session_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Unique ID identifying the session in which the deduction happened.
+Will be generated if not provided </div>
+<div class="param">remark (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> optional remark to be reported in the event signaling the transaction </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="deductBucketChargingResponseBody"><code>deductBucketChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Deduct Bucket response</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="failedAddChargingEntity"><code>failedAddChargingEntity</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Failed add charging entity</div>
+    <div class="field-items">
+      <div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: CHARGING</span></div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="failed_request_body"><code>failed_request_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Message description for a failed request</div>
+    <div class="field-items">
+      <div class="param">msg (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Relevant message regarding error </div>
+<div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Relevant error code </div>
+          <div class="param-desc"><span class="param-type">example: 31</span></div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Module in which error occured, used for separation of different error codes </div>
+          <div class="param-desc"><span class="param-type">example: USER</span></div>
+<div class="param">subscriber_state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Subscriber state code in case it caused request failure </div>
+          <div class="param-desc"><span class="param-type">example: 3</span></div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="failed_voice_request_body"><code>failed_voice_request_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Message description for a failed request</div>
+    <div class="field-items">
+      <div class="param">msg (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Relevant message regarding error </div>
+<div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Relevant error code </div>
+          <div class="param-desc"><span class="param-type">example: 31</span></div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Module in which error occured, used for separation of different error codes </div>
+          <div class="param-desc"><span class="param-type">example: USER</span></div>
+<div class="param">subscriber_state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Subscriber state code in case it caused request failure </div>
+          <div class="param-desc"><span class="param-type">example: 3</span></div>
+<div class="param">announcement (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Announcement that corresponding to the failure reason </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="get_body"><code>get_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">ids (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: [&quot;f4258c7518ff405c87dc32ef0720dba2&quot;,&quot;213d990502e84841bed4550c78fd8fd8&quot;]</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="policyCounterData"><code>policyCounterData</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Policy Counter Entity data</div>
+    <div class="field-items">
+      <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Policy Counter name</span></div>
+<div class="param">thresholds (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">array[Integer]</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: [20,30,40]</span></div>
+<div class="param">statuses (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: [&quot;status_1&quot;,&quot;status_2&quot;,&quot;status_3&quot;,&quot;status_4&quot;]</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="policyGroupData"><code>policyGroupData</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Policy Group Entity data</div>
+    <div class="field-items">
+      <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Policy Group name</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="policyRuleData"><code>policyRuleData</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Policy Rule Entity data</div>
+    <div class="field-items">
+      <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Policy Rule name</span></div>
+<div class="param">policy_counter_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: f4258c7518ff405c87dc32ef0720dba2</span></div>
+<div class="param">policy_counter_status (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: status_1</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="ratingGroupData"><code>ratingGroupData</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Rating Group Entity data</div>
+    <div class="field-items">
+      <div class="param">number </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 666</span></div>
+<div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Rating Group Name</span></div>
+<div class="param">threshold_percentage </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 90</span></div>
+<div class="param">validity_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1800</span></div>
+<div class="param">holding_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1500</span></div>
+<div class="param">final_unit_action </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">redirection_addr (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: some redirection url</span></div>
+<div class="param">redirection_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">quota_amount </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 10485760</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingRequestBody"><code>smsChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Request for SMS charging. Other than required fields, it must include either
+commit or refund, at least one of the subscriber identifiers (IMSI and MSISDN),
+and exactly one of the identifiers for the other participant in communication
+(called_party_number or other_party_number)</div>
+    <div class="field-items">
+      <div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ocf_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">traffic_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Service identifier - denotes data, voice or SMS. Should always be 3 format: int32</div>
+          <div class="param-desc"><span class="param-type">example: 3</span></div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> MSISDN of the user to be charged. Must exist if IMSI is not specified. </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> IMSI of the user to be charged. Must exist if MSISDN is not specified. </div>
+<div class="param">called_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">other_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnp_status (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Mobile number portability status </div>
+<div class="param">time </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> Unix timestamp format: int64</div>
+<div class="param">time_zone </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">cell_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imeisv (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">bearer (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mcc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">smsc_info </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">session_flow (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">reserve (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">commit (optional)</div><div class="param-desc"><span class="param-type"><a href="#smsChargingRequestBody_commit">smsChargingRequestBody_commit</a></span>  </div>
+<div class="param">refund (optional)</div><div class="param-desc"><span class="param-type"><a href="#smsChargingRequestBody_refund">smsChargingRequestBody_refund</a></span>  </div>
+<div class="param">protocol_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> DIAMETER_GY = 1
+DIAMETER_RO = 2
+CAMEL = 3 </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingRequestBody_commit"><code>smsChargingRequestBody_commit</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">is_final </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingRequestBody_refund"><code>smsChargingRequestBody_refund</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingResponseBody"><code>smsChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Response for SMS charging. Other than required fields, it must
+include either commit_response or refund_response based on the
+request type.</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Only present if IMSI was provided in the request </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">reserve_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#smsChargingResponseBody_reserve_response">smsChargingResponseBody_reserve_response</a></span>  </div>
+<div class="param">commit_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#smsChargingResponseBody_commit_response">smsChargingResponseBody_commit_response</a></span>  </div>
+<div class="param">refund_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#smsChargingResponseBody_commit_response">smsChargingResponseBody_commit_response</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingResponseBody_commit_response"><code>smsChargingResponseBody_commit_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="smsChargingResponseBody_reserve_response"><code>smsChargingResponseBody_reserve_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Response to the reserve request. It will exist if
+request had a reserve and session_flow flags with value &amp;quot;true&amp;quot;.</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">validity_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="topUpChargingRequestBody"><code>topUpChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">TopUp request</div>
+    <div class="field-items">
+      <div class="param">amount </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> amount must be a positive decimal string </div>
+<div class="param">external_transaction_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">transaction_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> transaction_id should be a time_uuid </div>
+<div class="param">wallet_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#walletType">walletType</a></span>  </div>
+<div class="param">active_epoch (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">grace_epoch (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">remark (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">expiry_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">payment_info (optional)</div><div class="param-desc"><span class="param-type"><a href="#topUpChargingRequestBody_payment_info">topUpChargingRequestBody_payment_info</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="topUpChargingRequestBody_payment_info"><code>topUpChargingRequestBody_payment_info</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">voucher_code (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="topUpChargingResponseBody"><code>topUpChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">wallets (optional)</div><div class="param-desc"><span class="param-type"><a href="#topUpChargingResponseBody_wallets">topUpChargingResponseBody_wallets</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="topUpChargingResponseBody_wallets"><code>topUpChargingResponseBody_wallets</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">wallet_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#wallets">wallets</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_body"><code>update_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">data </div><div class="param-desc"><span class="param-type"><a href="#chargingEntityData">chargingEntityData</a></span>  </div>
+<div class="param">version </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: f4258c7518ff405c87dc32ef0720dba2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="update_state_body"><code>update_state_body</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">version </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: f4258c7518ff405c87dc32ef0720dba2</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceChargingRequestBody"><code>voiceChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Request for voice charging. Other than required fields, it also
+must include at least one of the two operations (reserve and commit),
+at least one of the subscriber identifiers (IMSI and MSISDN), exactly
+one of the identifiers for the other participant in communication
+(called_party_number or other_party_number), and at least one of the
+identifiers for the caller mcc and mnc (msc_info or both mcc_a and mnc_a)</div>
+    <div class="field-items">
+      <div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ocf_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Service identifier - denotes data, voice or SMS. Should always be 2 format: int32</div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">traffic_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Voice scenario identifier - denotes mobile Originating,
+mobile Terminated or mobile Forwarding call format: int32</div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> MSISDN of the user to be charged. Must exist if IMSI is not specified. </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> IMSI of the user to be charged. Must exist if MSISDN is not specified. </div>
+<div class="param">called_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">other_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">forwarding_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msisdn_nai (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+<div class="param">other_party_number_nai (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+<div class="param">mnp_status </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Mobile number portability status format: int32</div>
+<div class="param">time </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> Unix timestamp format: int64</div>
+<div class="param">time_zone </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">cell_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Cell ID </div>
+<div class="param">imeisv (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mcc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msc_info (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">is_lte </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">is_fallback_mode (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">reserve (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Reserve request flag. Must exist if commit object is not provided </div>
+<div class="param">commit (optional)</div><div class="param-desc"><span class="param-type"><a href="#voiceChargingRequestBody_commit">voiceChargingRequestBody_commit</a></span>  </div>
+<div class="param">protocol_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> DIAMETER_GY = 1
+DIAMETER_RO = 2
+CAMEL = 3 </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceChargingRequestBody_commit"><code>voiceChargingRequestBody_commit</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Commit request object. Must exist if reserve flag is not present or if it has value &amp;quot;false&amp;quot;</div>
+    <div class="field-items">
+      <div class="param">is_final </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceChargingResponseBody"><code>voiceChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Only present if IMSI was provided in the request </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">subscriber_state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">announcement (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">reserve_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#voiceChargingResponseBody_reserve_response">voiceChargingResponseBody_reserve_response</a></span>  </div>
+<div class="param">commit_response (optional)</div><div class="param-desc"><span class="param-type"><a href="#voiceChargingResponseBody_commit_response">voiceChargingResponseBody_commit_response</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceChargingResponseBody_commit_response"><code>voiceChargingResponseBody_commit_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Response to the commit request. It will exist if
+request had a commit object.</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceChargingResponseBody_reserve_response"><code>voiceChargingResponseBody_reserve_response</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Response to the reserve request. It will exist if
+request had a reserve flag with value &amp;quot;true&amp;quot;.</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">validity_time (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">final_unit_action (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceTapChargingRequestBody"><code>voiceTapChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Request for voice charging. Other than required fields, it also
+must include at least one of the two operations (reserve and commit),
+at least one of the subscriber identifiers (IMSI and MSISDN), exactly
+one of the identifiers for the other participant in communication
+(called_party_number or other_party_number), and at least one of the
+identifiers for the caller mcc and mnc (msc_info or both mcc_a and mnc_a)</div>
+    <div class="field-items">
+      <div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ocf_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Service identifier - denotes data, voice or SMS. Should always be 2 format: int32</div>
+          <div class="param-desc"><span class="param-type">example: 2</span></div>
+<div class="param">traffic_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Voice scenario identifier - denotes mobile Originating,
+mobile Terminated or mobile Forwarding call format: int32</div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> MSISDN of the user to be charged. Must exist if IMSI is not specified. </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> IMSI of the user to be charged. Must exist if MSISDN is not specified. </div>
+<div class="param">called_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">other_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">forwarding_party_number (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnp_status </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Mobile number portability status format: int32</div>
+<div class="param">time </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> Unix timestamp format: int64</div>
+<div class="param">time_zone </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">cell_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Cell ID </div>
+<div class="param">imeisv (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mcc_a </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">mnc_a (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msc_info (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">is_lte </div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">commit </div><div class="param-desc"><span class="param-type"><a href="#voiceTapChargingRequestBody_commit">voiceTapChargingRequestBody_commit</a></span>  </div>
+<div class="param">protocol_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> DIAMETER_GY = 1
+DIAMETER_RO = 2
+CAMEL = 3 </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceTapChargingRequestBody_commit"><code>voiceTapChargingRequestBody_commit</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Commit request object. Is mandatory for voice tap charging.</div>
+    <div class="field-items">
+      <div class="param">unit </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="voiceTapChargingResponseBody"><code>voiceTapChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">session_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operator_name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">msisdn (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">imsi (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Only present if IMSI was provided in the request </div>
+<div class="param">service_type </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">subscriber_state </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletCommitChargingRequestBody"><code>walletCommitChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletCommit request</div>
+    <div class="field-items">
+      <div class="param">reservation_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">transaction_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">external_transaction_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">remark (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletCommitChargingResponseBody"><code>walletCommitChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletCommit response</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletReleaseChargingRequestBody"><code>walletReleaseChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletRelease request</div>
+    <div class="field-items">
+      <div class="param">reservation_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> reservation_id should be a time_uuid </div>
+<div class="param">transaction_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">external_transaction_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletReleaseChargingResponseBody"><code>walletReleaseChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletRelease response</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletReserveChargingRequestBody"><code>walletReserveChargingRequestBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletReserve request</div>
+    <div class="field-items">
+      <div class="param">amount </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> amount must be a positive decimal string </div>
+<div class="param">transaction_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">external_transaction_id (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">wallet_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> used to specify a specific wallet. defaulted to primary. must be allowed in operator config </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletReserveChargingResponseBody"><code>walletReserveChargingResponseBody</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">WalletReserve response</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">module </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">server_time </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Current server time in UTC epoch seconds </div>
+          <div class="param-desc"><span class="param-type">example: 1545667505</span></div>
+<div class="param">reservation_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> reservation_id is a time_uuid </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="walletType"><code>walletType</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">Allowed wallet types</div>
+    <div class="field-items">
+          </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="wallets"><code>wallets</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">amount </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> amount should be a non-negative decimal string </div>
+<div class="param">negative (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> negative should be a non-negative decimal string </div>
+<div class="param">max_amount (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> max_amount should be a non-negative decimal string </div>
+<div class="param">active_epoch </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">grace_epoch </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">breakdown </div><div class="param-desc"><span class="param-type"><a href="#wallets_breakdown">array[wallets_breakdown]</a></span>  </div>
+    </div>  <!--  field-items  -->
+  </div>
+  <div class="model">
+    <h3><a name="wallets_breakdown"><code>wallets_breakdown</code></a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="model-description">It should always be: left + used &amp;lt;= initial</div>
+    <div class="field-items">
+      <div class="param">code </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">initial </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> initial should be a non-negative decimal string, which represents the initial amount that the subscriber has top-up </div>
+<div class="param">left </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> left should be a non-negative decimal string, which represents how much amount is left to the subscriber in a particular entry in the breakdown </div>
+<div class="param">used </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> used should be a non-negative decimal string, representing the amount used by the subscriber for a particular entry in the breakdown </div>
+    </div>  <!--  field-items  -->
+  </div>
+  </body>
+</html>
+</span><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts13">Created with the Personal Edition of HelpNDoc: </span><a class="rvts14" href="https://www.helpndoc.com">Full-featured Documentation generator</a></p>
+
+            </div>
+            
+            
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
